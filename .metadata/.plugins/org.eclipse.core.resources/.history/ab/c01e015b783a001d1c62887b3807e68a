@@ -1,0 +1,21 @@
+package com.training.programs;
+import java.util.*;
+public class SampleOne 
+{
+     public static void main(String[] args) 
+     {
+		Map<String , Integer> map=new HashMap<>();
+		
+		map.put("sreenu", 1);
+		
+		if(map.isEmpty())
+		{
+			System.out.println("There is no values");
+		}
+		if(map!=null)
+		{
+			System.out.println("Hai");
+		}
+		System.out.println(map);
+	}
+}

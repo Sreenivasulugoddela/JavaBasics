@@ -1,0 +1,14 @@
+package com.training.programs;
+
+public class SampleTwo
+{
+   public static void main(String[] args) {
+	
+	   
+	   StringBuilder ab=new StringBuilder("I am software developer");
+	   
+	   StringBuilder cd=ab.append(" in techouts company");
+	   
+	   System.out.println(cd);
+}
+}

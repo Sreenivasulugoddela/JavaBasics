@@ -1,0 +1,27 @@
+package com.training.programs;
+import java.util.*;
+public class SampleTwo
+{
+   public static void main(String[] args) {
+	
+	   
+	   Map<String,Object> map=new HashMap<>();
+	   String name="StoreName";
+	   StringBuilder ab=new StringBuilder("I am software developer");
+	   
+	   StringBuilder cd=ab.append(" in techouts company");
+	   
+	   System.out.println(cd);
+	   
+	  
+   }
+}
+class AB
+{
+	public static String list(String ab,String bc)
+	{
+		System.out.println(ab+" "+bc);
+		return "";
+	}
+}
+
