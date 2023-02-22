@@ -17,6 +17,8 @@ public class ObjectCondition
 	     System.out.println(two);
 	     System.out.println("++++++");
 	   }
+	   else
+		   System.out.println("=================");
    }
   
 }

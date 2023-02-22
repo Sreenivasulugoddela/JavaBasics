@@ -15,7 +15,9 @@ public class MixingStream
    public static void main(String[] args) 
    {
 	
+	
 	List<Integer> elements=Arrays.asList(3,2,1,4,5,8);
+	
 	// summing the array using streams
 	
 	int add=elements.stream().mapToInt(Integer::intValue).sum();
@@ -55,8 +57,8 @@ public class MixingStream
 	Optional<Double> result1=findFirst.stream().findFirst();
 	 //System.out.println();
 	
-	// to find any value
-	Optional<Double> result2=findFirst.stream().findAny();
+      // to find any value
+	  Optional<Double> result2=findFirst.stream().findAny();
 	
       System.out.println("Find first"+result1);
       
@@ -68,10 +70,9 @@ public class MixingStream
     		  .findFirst()
     		  .get();
       
+      
       System.out.println(one);
-      
-      
-      
+    
       //using flatMap method 
       List coutry=Stream.of(Arrays.asList("A","B","C","D","E"),Arrays.asList("A","G","H","I","J"),Arrays.asList("K","L","M","N","O","P")
     		  ).flatMap(List::stream).distinct().collect(Collectors.toList());

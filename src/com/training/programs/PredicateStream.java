@@ -17,35 +17,30 @@ public class PredicateStream
 		Predicate<Employee> empSalAbove15k=s->s.getEmpSal()>15_00;
 		Predicate<Employee> combinedBoth=empAgeAbove23.and(empSalAbove15k);
 		
+		
 		boolean result=getEmployeeDetails().allMatch(combinedBoth);
 		System.out.println(result);
 		System.out.println("-------------");
+		
 		boolean result1=getEmployeeDetails().anyMatch(combinedBoth);
 		System.out.println(result1);
-		
 	}
-	
-
-	public static Stream<Employee> getEmployeeDetails()
+    public static Stream<Employee> getEmployeeDetails()
 	{
 		List<Employee> details=new ArrayList<Employee>();
 		
-		details.add(new Employee("Sreenivas","1912",15000,23));
+		details.add(new Employee("Sreenivas","1912",15000,20));
 		details.add(new Employee("Sreenu","1914",18000,25));
 		details.add(new Employee("vas","1902",19000,22));
 		details.add(new Employee("nivas","1908",10000,23));
   
 		 return details.stream();
 	}
-
-	
 }
-
 class Employee
 {
-
 	private String name;
-    
+   
 	private String empId;
 	
 	private double empSal;
